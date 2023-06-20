@@ -1,0 +1,278 @@
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.tagline {
+  margin-top: 10px;
+  color: #666;
+  font-style: italic;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.product-images .product .img {
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.shop-button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featured-h1 {
+  margin-top: 30px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-products {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.featured-products .product {
+  flex-basis: calc(33.33% - 20px);
+  margin: 0 10px;
+}
+
+.product {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.featured-products .product .img4 {
+  border-radius: 5px;
+  width: 300px;
+}
+.featured-products .product .img5 {
+  border-radius: 5px;
+  width: 300px;
+  height: 210px;
+}
+.price {
+  color: #4caf50;
+}
+.newsletter {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+.form {
+  margin-top: 60px;
+  margin-left: 120px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  width: 250px;
+}
+
+.subscribe-button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-left: 420px;
+  margin-top: -540px;
+}
+
+.image-grid .image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.image-grid .image-item-mod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-grid img {
+  border-radius: 4px;
+  display: block;
+}
+
+.image-grid h3,
+.image-grid h4 {
+  margin: 4px 0;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .product-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-images .product {
+    margin-bottom: 20px;
+  }
+
+  .shop-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-h1 {
+    font-size: 20px;
+  }
+
+  .featured-products .product {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .form {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .image-grid .image-item,
+  .image-grid .image-item-mod {
+    margin-bottom: 20px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 20px;
+  }
+
+  .product-images .product {
+    margin: 0 5px;
+  }
+
+  .shop-button {
+    margin-left: 40%;
+  }
+
+  .featured-h1 {
+    font-size: 22px;
+  }
+
+  .featured-products .product {
+    flex-basis: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 240px;
+    margin-top: -540px;
+  }
+}
+
+/* Media Query for screens larger than 1023px */
+@media (min-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+
+  .product-images .product {
+    margin: 0 10px;
+  }
+
+  .shop-button {
+    margin-left: 46%;
+  }
+
+  .featured-h1 {
+    font-size: 28px;
+  }
+
+  .featured-products .product {
+    flex-basis: calc(33.33% - 20px);
+    margin: 0 10px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 420px;
+    margin-top: -540px;
+  }
+}
